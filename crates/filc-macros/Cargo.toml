@@ -1,0 +1,22 @@
+[package]
+name = "filc-macros"
+description = "Attribute macros for filc bridge declarations"
+documentation = "https://docs.rs/filc-macros"
+readme = "../../README.md"
+version.workspace = true
+edition.workspace = true
+categories.workspace = true
+keywords.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0"
+quote = "1.0"
+syn = { version = "2.0", features = ["full"] }
+
+[lints]
+workspace = true

@@ -1,0 +1,25 @@
+version = 1
+name = "rust-filc"
+
+[environment]
+provider = "nix"
+lockfiles = ["flake.lock", "Cargo.lock"]
+platforms = ["linux-amd64"]
+
+[operations.check]
+command = ["just", "check"]
+capabilities = ["os:linux", "arch:amd64"]
+timeout_seconds = 7200
+allow_changes = false
+
+[operations.smoke]
+command = ["just", "smoke"]
+capabilities = ["os:linux", "arch:amd64"]
+timeout_seconds = 3600
+allow_changes = false
+
+[operations.package]
+command = ["just", "package"]
+capabilities = ["os:linux", "arch:amd64"]
+timeout_seconds = 3600
+allow_changes = false

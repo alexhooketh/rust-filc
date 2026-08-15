@@ -1,0 +1,17 @@
+[package]
+name = "filc"
+description = "Safe process transport for generated Rust-to-Fil-C bridges"
+documentation = "https://docs.rs/filc"
+readme = "../../README.md"
+version.workspace = true
+edition.workspace = true
+categories.workspace = true
+keywords.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+filc-macros = { version = "0.1.0", path = "../filc-macros" }
+
+[lints]
+workspace = true

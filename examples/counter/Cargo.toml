@@ -1,0 +1,16 @@
+[package]
+name = "filc-counter"
+description = "End-to-end filc example compiled with Fil-C"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+filc = { path = "../../crates/filc" }
+
+[build-dependencies]
+filc-build = { path = "../../crates/filc-build" }
+
+[lints]
+workspace = true
