@@ -12,6 +12,7 @@ edition = "2024"
 categories = ["api-bindings", "development-tools::ffi"]
 keywords = ["fil-c", "ffi", "memory-safety", "c", "code-generation"]
 license = "MIT OR Apache-2.0"
+repository = "https://github.com/alexhooketh/rust-filc"
 rust-version = "1.85"
 version = "0.1.0"
 
